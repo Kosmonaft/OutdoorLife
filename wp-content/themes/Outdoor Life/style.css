@@ -1,0 +1,459 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 12, 2015, 9:19:40 PM
+    Author     : Pawel
+*/
+
+@font-face { font-family: OpenSans; src: url('css/fonts/open-sans.regular.ttf'); } 
+@font-face { font-family: OpenSansBold; src: url('css/fonts/open-sans.bold.ttf'); } 
+h1, h2, h3, h4, input {
+    font-family: OpenSansBold
+}
+
+body {
+    font: 12px/16px;
+    font-family: OpenSans;
+    background: #f4f4f4;
+}
+
+p {
+    margin: 0;}
+
+html, body, #map-container {
+    height: 100%;
+    margin: 0px;
+    padding: 0px
+}
+
+h1 {
+    clear:both
+}
+
+div#main {
+    position: relative;
+    width:1280px;
+    margin: 0 auto;
+}
+
+section{
+    width: 100%;
+    position:relative;
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 24px;
+    text-transform:uppercase;
+    font-weight: bold;
+    color: #FFB931;
+}
+
+section.header {
+    background: #454545;
+    background-color:rgba(69, 69, 69, 0.6);
+    height:80px;
+}
+
+section#index {
+    background:url("http://hdw.datawallpaper.com/nature/cabins-in-the-austrian-alps-in-summer-hdr-323845.jpg") no-repeat;
+    width:100%;
+    height:600px;}
+
+section#quotation {
+    background: #0d648c;
+    padding: 20px 0;
+    font-size:20px}
+
+section#quotation .post {
+    color: #fff !important;}
+
+section#quotation .post  .author {
+    text-transform: uppercase;
+    color: #FFB931 !important;
+    padding: 10px 0;}
+
+section.trips a, section.news a,
+section.trips .post.missingTrip{
+    text-decoration: none;
+    float:left;
+    width:33.3%;
+    position:relative;
+}
+
+.post {
+    color: #454545 !important;
+}
+
+.post h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 8px;
+    position: absolute;
+    top: 78%;
+    left: 20px;
+}
+
+section.trips .post {
+    width: 100%;
+    float: left;
+    display: block;
+    text-align: left;
+}
+
+.post span.region {
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #FFB931;
+    padding: 2px 4px;
+    text-decoration: none;
+    position: absolute;
+    top: 72%;
+    display: block;
+    left: 20px;
+    text-align: center;
+}
+
+section.trips .post div.data{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+    position: absolute;
+    top: 90%;
+    left: 20px;
+    padding-left:24px;
+    padding-top:2px;
+    line-height:19px;
+    background: url("http://k2-sklep.nazwa.pl/wordpress/wp-content/themes/Outdoor%20Life/img/wyjazdy-kalendarz.png") no-repeat left transparent;
+}
+
+section.trips .post div.main {
+    position: relative;
+    z-index: -999;
+    vertical-align: top;
+}
+
+section.trips.container .post div.main img {
+    width:100%;
+    vertical-align: top;
+}
+
+section.trips.container .post .overlay{ 
+    position:absolute; 
+    width:100%; 
+    height:100%;
+    background:#000; 
+    opacity:0;
+    top: 0px;
+    left: 0px;
+    z-index: -99;} 
+
+section.trips.container .post:hover .overlay { 
+    opacity:0.6; }
+
+/*section.trips.container .post:hover {
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+width:100%;
+height:100%;
+border: 2px solid #FFB931;
+}*/
+
+section.news .post {
+    margin:0 10px;
+    background:#fff;
+    float: left;
+    display: block;
+    text-align: left;
+    min-height: 580px;
+}
+
+section.news .post div.typ {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: #0d648c;
+}
+
+section.news .post div.tytul {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+section.news .post div.description {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+section.news .post div.main img {
+    width:100%;
+    margin-bottom: 10px;
+}
+
+section.news .post div.data{
+    font-size: 11px;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+section.logo {
+    text-align: left;
+    float: left;
+    width:100px;
+}
+
+.menu-podstawowe-menu-container {
+    float: left;
+    padding-left: 230px;
+    padding-top: 12px;
+    width: 750px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.menu-podstawowe-menu-container ul {
+    list-style-type: none;}
+
+.menu-podstawowe-menu-container li {
+    display: inline;
+    padding-right:30px;
+    font-size: 20px;
+}
+
+.menu-podstawowe-menu-container a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.menu-podstawowe-menu-container a:hover {
+    color: #FFB931;}
+
+/* CATEGORY WYJAZDY */
+
+.post-details.wyprawa.header {
+    background: #fff;
+    padding: 20px 0;
+    margin:20px 0;
+    text-align:left;
+    float:left;
+    width:100%;
+}
+
+.post-details.wyprawa.location.region {
+    text-align:left;
+    margin-bottom:10px;
+}
+
+.post-details.wyprawa.location.region span {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #FFB931;
+    padding: 2px 4px;
+    text-decoration: none;
+}
+
+.post-details.wyprawa.details h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.post-details.wyprawa.type.typ {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.post-details.wyprawa.date {
+    text-align:left;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+    padding-left:24px;
+    padding-top:2px;
+    margin-top:10px;
+    line-height:19px;
+    background: url("http://k2-sklep.nazwa.pl/wordpress/wp-content/themes/Outdoor%20Life/img/wyjazdy-kalendarz.png") no-repeat left transparent;
+}
+
+.post-details.wyprawa.koszt {
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.post-details.wyprawa.koszt span {
+    color: #FFB931;
+}
+
+.post-details.wyprawa.koszt a.rezerwuj {
+    position: relative;
+    top:10px;
+    text-decoration: none;
+    color: #fff;
+    background:#ffb931;
+    border: 2px solid #ffb931;
+    text-transform: uppercase;
+    padding: 5px 50px;
+    font-size:16px;
+}
+
+.post-details.wyprawa.koszt a.rezerwuj:hover {
+    color: #000;
+    background:#fff;
+    border: 2px solid #ffb931;}
+
+.post-details.wyprawa.details div.krotki.opis {
+    margin-top:80px;}
+
+.post-details.wyprawa.image {
+    position: relative;
+    width: 500px;
+    background: #fff;
+    float: left;
+    text-align: left;
+    padding: 20px;
+}
+
+.post-details.wyprawa.image img {
+    width:100%;
+}
+
+.post-details.wyprawa.details {
+    display: block;
+    text-align: left;
+    padding: 20px;
+    background: #fff;
+    float: right;
+    width: 678px;
+    min-height:380px;
+}
+
+.post-details.wyprawa.description {
+    text-align:left;
+}
+
+.post-details.wyprawa.program {
+    text-align:left;
+}
+
+.post-details.wyprawa.additional.info {
+    text-align:left;
+}
+
+.post-details.wyprawa.details a.more {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    padding: 5px 50px;
+    top: 30px;
+    left: 200px;
+}
+
+.post-details.wyprawa.details a.more:hover {
+    color: #fff;
+    background:#000;
+}
+
+div#top-container {
+    margin-top:20px;}
+
+div#left-column {
+    width:878px;
+    padding:20px;
+    margin-top:20px;
+    background:#fff;
+    float:left;}
+
+div#right-column {
+    width:298px;
+    padding:20px;
+    margin-top:20px;
+    background:#fff;
+    float:right;
+    height: 100%;}
+
+#left-column h4 , #right-column h4 {
+    text-transform: uppercase;
+    margin-top:0px;
+    padding:0px;
+}
+
+article{
+    overflow: hidden;
+}
+
+.closest.trips.container{
+    overflow:hidden;
+}
+
+.closest.trips.container .details{
+    width:80%;
+    float:left;
+}
+
+.closest.trips.container .trip.small.image{
+    float:left;
+    width:20%;
+}
+.closest.trips.container .trip.small.image img{
+    width:100px;
+}
+
+
+
+/**********TABS********/
+.tab {
+    margin: 20px 0 0 0;
+    float:left;
+    display:block;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px 5px 0 0;
+    background:#F9F9F9;
+    color:#777;
+}
+.tab.active,
+.tab:hover {
+    background:#DDD;
+    color:#222;
+}
+.content {
+    display:none;
+    clear:both;
+    background:#FFF;
+    padding:20px;
+}
+.content.active {
+    display:block;
+    width: 100%;
+    float: left;
+    padding: 20px 0;
+}
