@@ -38,8 +38,11 @@
                 <?php endif; ?>
             </section>
             <section class="details">
+		<section class="post-details wyprawa location region">
+                    <span><?php the_field('region'); ?></span>
+                </section> 
                 <header><?php the_title() ?></header>
-                <section class="trip date">
+                <section class="post-details closest date">
                     <span><?php the_field('data_wyprawy'); ?></span>
                 </section>
             </section>

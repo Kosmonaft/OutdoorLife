@@ -33,6 +33,14 @@ h1 {
     clear:both
 }
 
+a {
+text-decoration: none;
+color:#4c4c4c;}
+
+a:hover {
+text-decoration: underline;
+color:#4c4c4c;}
+
 div#main {
     position: relative;
     width:1280px;
@@ -86,6 +94,15 @@ section.trips .post.missingTrip{
     position:relative;
 }
 
+#right-column section {
+text-align:left;}
+
+#right-column section.pogoda {
+padding: 20px 0;}
+
+#right-column section h4 {
+border-bottom:2px solid #FFB931;}
+
 .post {
     color: #454545 !important;
 }
@@ -97,7 +114,7 @@ section.trips .post.missingTrip{
     color: #fff;
     margin-top: 8px;
     position: absolute;
-    top: 78%;
+    top: 73%;
     left: 20px;
 }
 
@@ -117,7 +134,7 @@ section.trips .post {
     padding: 2px 4px;
     text-decoration: none;
     position: absolute;
-    top: 72%;
+    top: 66%;
     display: block;
     left: 20px;
     text-align: center;
@@ -129,7 +146,7 @@ section.trips .post div.data{
     font-weight: bold;
     font-size: 11px;
     position: absolute;
-    top: 90%;
+    top: 85%;
     left: 20px;
     padding-left:24px;
     padding-top:2px;
@@ -176,7 +193,7 @@ section.news .post {
     float: left;
     display: block;
     text-align: left;
-    min-height: 580px;
+    min-height: 450px;
 }
 
 section.news .post div.typ {
@@ -203,6 +220,7 @@ section.news .post div.description {
 
 section.news .post div.main img {
     width:100%;
+    height: 150px;
     margin-bottom: 10px;
 }
 
@@ -285,17 +303,28 @@ section.logo {
     font-weight: bold;
 }
 
-.post-details.wyprawa.date {
+.post-details.date {
     text-align:left;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 11px;
     padding-left:24px;
     padding-top:2px;
-    margin-top:10px;
     line-height:19px;
     background: url("http://k2-sklep.nazwa.pl/wordpress/wp-content/themes/Outdoor%20Life/img/wyjazdy-kalendarz.png") no-repeat left transparent;
 }
+
+.post-details.wyprawa.date {
+    margin-top:10px;
+}
+
+.post-details.closest.date {
+    margin-top:0;
+}
+
+section.closest header {
+text-transform: uppercase;
+font-weight:bold;}
 
 .post-details.wyprawa.koszt {
     text-transform: uppercase;
@@ -387,7 +416,8 @@ div#top-container {
 
 div#left-column {
     width:878px;
-    padding:20px;
+    min-height: 415px;
+    padding:0 20px;
     margin-top:20px;
     background:#fff;
     float:left;}
@@ -398,7 +428,8 @@ div#right-column {
     margin-top:20px;
     background:#fff;
     float:right;
-    height: 100%;}
+    height: 100%;
+	text-align:left;}
 
 #left-column h4 , #right-column h4 {
     text-transform: uppercase;
@@ -415,8 +446,8 @@ article{
 }
 
 .closest.trips.container .details{
-    width:80%;
-    float:left;
+width: 60%;
+float: right;
 }
 
 .closest.trips.container .trip.small.image{
@@ -431,24 +462,27 @@ article{
 
 /**********TABS********/
 .tab {
-    margin: 20px 0 0 0;
     float:left;
     display:block;
     padding:10px 20px;
     text-decoration:none;
-    border-radius:5px 5px 0 0;
     background:#F9F9F9;
     color:#777;
+	text-transform:uppercase;
 }
 .tab.active,
 .tab:hover {
     background:#DDD;
     color:#222;
 }
+
+.tabs a:hover {
+text-decoration: none !important;
+}
+
 .content {
     display:none;
     clear:both;
-    background:#FFF;
     padding:20px;
 }
 .content.active {
@@ -457,3 +491,35 @@ article{
     float: left;
     padding: 20px 0;
 }
+
+.wiecej {
+display: block;
+position: relative;
+float: left;
+width: 200px;
+margin: 10px;
+border: 2px solid #FFB931;
+padding: 10px;
+text-transform: uppercase;
+}
+
+a.regulamin {
+text-transform: uppercase;
+display: block;
+margin: 5px 10px;
+}
+
+a:hover.regulamin {
+text-decoration: underline !important;}
+
+.regulamin img {
+padding-right: 5px;
+float: left;
+position: relative;
+top: 4px;}
+
+.linia {
+border:1px solid #dadada;}
+
+.aw-current-weather-inner h3 {
+color:#000;}

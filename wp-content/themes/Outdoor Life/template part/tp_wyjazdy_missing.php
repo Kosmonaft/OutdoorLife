@@ -10,7 +10,7 @@
 <div class="post missingTrip">
     <div class="overlay"></div>
    <!-- <span class="region"></span>-->
-    <h2>Kolejny wyjazdy wkrótce</h2>
+    <h2>Kolejne wyjazdy wkrótce</h2>
    <!-- <div class="data"></div>-->
     <div class="main image">
         <img src="http://k2-sklep.nazwa.pl/wordpress/wp-content/uploads/2015/06/where-next.jpg" alt="Kolejny wyjazdy wkrótce"/>

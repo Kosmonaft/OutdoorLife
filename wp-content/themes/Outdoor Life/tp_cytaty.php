@@ -6,7 +6,7 @@
  */
 ?>
     <div class="post">
-		<div class="content"><?php the_content(); ?></div>
+		<div class="cytat tresc"><?php the_content(); ?></div>
 		<div class="author"><?php the_field('autor'); ?></div>
         
     </div> <!-- closes the first div box -->

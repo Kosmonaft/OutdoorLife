@@ -74,6 +74,7 @@ get_header();
         <p>brak</p>
     <?php }
     ?>
+<div class="wiecej wyjazdy">Zobacz wszystkie</div>
 </section>
 <section id="news" class="news container">
     <h3>Aktualnosci</h3>
@@ -94,32 +95,6 @@ get_header();
         <p>brak</p>
     <?php }
     ?>
-</section>
-
-<section id="trainings" class="trainings container">
-    <h3>Szkolenia</h3>
-    <?php
-    query_posts('cat=4&showposts=3');
-    if (have_posts()) {
-        while (have_posts()) : the_post();
-
-            get_template_part('tp_szkolenia');
-
-        endwhile;
-    }else {
-        ?>
-        <p>brak</p>
-    <?php }
-    ?>
-</section>
-<section id="info" class="info container">
-    <h3>O nas</h3>
-</section>
-<section id="contact" class="contact container">
-    <h3>Kontakt</h3>
-
-    <div id="map-container" style="height:500px; width:100%;"></div>
-
 </section>
 <?php
     wp_footer();
