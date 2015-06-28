@@ -6,16 +6,7 @@
  */
 get_header();
 ?>
-<header>
-<section class="header">
-    <section class="logo">
-        <a href="/"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""/></a>
-    </section>
-    <nav>
-        <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
-    </nav>
-</section>
-</header>
+
 <section id="index">
 </section>
 <section id="quotation">
@@ -74,8 +65,10 @@ get_header();
         <p>brak</p>
     <?php }
     ?>
-<div class="wiecej wyjazdy">Zobacz wszystkie</div>
 </section>
+<div class="wiecej wyjazdy">
+	<a href="#">Zobacz wszystkie</a>
+</div>
 <section id="news" class="news container">
     <h3>Aktualnosci</h3>
     <?php
@@ -96,6 +89,9 @@ get_header();
     <?php }
     ?>
 </section>
+<div class="wiecej aktualnosci">
+	<a href="#">Zobacz wszystkie</a>
+</div>
 <?php
     wp_footer();
 get_footer();

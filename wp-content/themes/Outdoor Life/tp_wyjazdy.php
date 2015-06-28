@@ -6,7 +6,7 @@
  */
 ?>
 <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-    <div class="post">
+    <div class="post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="overlay"></div>
         <span class="region"><?php the_field('region'); ?></span>
         <h2><?php the_title(); ?></h2>

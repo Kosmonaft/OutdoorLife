@@ -6,16 +6,6 @@
  */
 get_header();
 ?>
-<header>
-    <section class="header">
-        <section class="logo">
-            <a href="/"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""/></a>
-        </section>
-        <nav>
-            <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
-        </nav>
-    </section>
-</header>
 <section id="wyjazdy template">
     <article>
         <!--p>Dodano <time>  <?php the_time('d-m-Y') ?></time-->

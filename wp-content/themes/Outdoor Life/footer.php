@@ -8,7 +8,7 @@
 ?>
 <footer>
     <?php if (is_category('2')) { ?>
-        <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/tabs.js"></script>
+        <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/tabs.js"></script>
     <?php } ?>
 
 </footer>

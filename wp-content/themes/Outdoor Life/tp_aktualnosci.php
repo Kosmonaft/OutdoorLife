@@ -15,12 +15,9 @@
 			<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />	
 			<?php endif; ?>
         </div>
-		<div class="typ">
-			<span ><?php the_field('typ'); ?></span>
-		</div>
+		<div class="typ"><span ><?php the_field('typ'); ?></span></div>
 		<div class="tytul"><?php the_title(); ?></div>
+		<div class="data"><?php the_time('F jS, Y'); ?></div>
 		<div class="short description"><?php the_field('krotki_tekst'); ?></div>
-        <div class="data"><?php the_time('F jS, Y'); ?></div>
-        
     </div> <!-- closes the first div box -->
 </a>
